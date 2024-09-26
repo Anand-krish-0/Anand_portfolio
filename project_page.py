@@ -89,7 +89,7 @@ def projects():
 
         # Display images with Base64 encoding
         st.subheader("1. Types of vehicles used grouped by area")
-        image1_path = "images\Types of vehicles used groubed by area.png"
+        image1_path = "images/Types of vehicles used groubed by area.png"
         img_str1 = load_image(image1_path)
         if img_str1:
             st.image(f"data:image/png;base64,{img_str1}", caption="Types of vehicles used grouped by area", use_column_width=True)
