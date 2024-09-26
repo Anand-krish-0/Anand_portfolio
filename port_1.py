@@ -118,23 +118,27 @@ if page == "About me":
     # Resume Download Section
     st.subheader("My Resume")
 
-    resume_file_path = "files\Anand resume 20 sep.pdf"
+    resume_file_path = "files/Anand resume 20 sep.pdf"
 
     # Function to read the PDF file
-    def read_pdf(file_path):
-        with open(file_path, "rb") as pdf_file:
-            return pdf_file.read()
 
-    # Read the resume file
+    def read_pdf(file_path):
+        if os.path.exists(file_path):
+            with open(file_path, "rb") as pdf_file:
+                return pdf_file.read()
+        else:
+            st.error(f"File not found: {file_path}")
+            return None
+
     resume_data = read_pdf(resume_file_path)
 
-    # Display the download button for the resume
-    st.download_button(
-        label="Download Resume",
-        data=resume_data,
-        file_name="Anandakrishnan_Resume.pdf",  # Set the name for the downloaded file
-        mime="application/pdf"
-    )
+    if resume_data:
+        st.download_button(
+            label="Download Resume",
+            data=resume_data,
+            file_name="Anandakrishnan_Resume.pdf",
+            mime="application/pdf"
+        )
 
     # Footer
     st.markdown("---")
