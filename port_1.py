@@ -55,7 +55,7 @@ def get_base64_image(image_path):
             return base64.b64encode(image_file.read()).decode()
 
 # Image path
-image_path = r"images\profile pic.jpg"  # Use forward slashes or raw strings to avoid path issues
+image_path = r"images/profile pic.jpg"  # Use forward slashes or raw strings to avoid path issues
 
 # Get the base64 encoded image
 encoded_image = get_base64_image(image_path)
