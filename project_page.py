@@ -75,36 +75,36 @@ def projects():
         elif opts == "Bivariate Analysis":
             st.header("Bivariate Analysis")
 
-        # Helper function to load and convert images to Base64
-        def load_image(image_path):
-            try:
-                image = Image.open(image_path)  # Open the image file
-                buffered = BytesIO()
-                image.save(buffered, format="PNG")  # Convert image to bytes
-                img_str = base64.b64encode(buffered.getvalue()).decode()  # Encode as Base64
-                return img_str
-            except Exception as e:
-                st.error(f"Error loading image {image_path}: {e}")
-                return None
+            # Helper function to load and convert images to Base64
+            def load_image(image_path):
+                try:
+                    image = Image.open(image_path)  # Open the image file
+                    buffered = BytesIO()
+                    image.save(buffered, format="PNG")  # Convert image to bytes
+                    img_str = base64.b64encode(buffered.getvalue()).decode()  # Encode as Base64
+                    return img_str
+                except Exception as e:
+                    st.error(f"Error loading image {image_path}: {e}")
+                    return None
 
-        # Display images with Base64 encoding
-        st.subheader("1. Types of vehicles used grouped by area")
-        image1_path = "images/Types of vehicles used groubed by area.png"
-        img_str1 = load_image(image1_path)
-        if img_str1:
-            st.image(f"data:image/png;base64,{img_str1}", caption="Types of vehicles used grouped by area", use_column_width=True)
+            # Display images with Base64 encoding
+            st.subheader("1. Types of vehicles used grouped by area")
+            image1_path = "images/Types of vehicles used groubed by area.png"
+            img_str1 = load_image(image1_path)
+            if img_str1:
+                st.image(f"data:image/png;base64,{img_str1}", caption="Types of vehicles used grouped by area", use_column_width=True)
 
-        st.subheader("2. Types of vehicles used grouped by educational qualification")
-        image3_path = "images/Types of vehicle used grouped by educational qualification.png"
-        img_str3 = load_image(image3_path)
-        if img_str3:
-            st.image(f"data:image/png;base64,{img_str3}", caption="Types of vehicles used grouped by education", use_column_width=True)
+            st.subheader("2. Types of vehicles used grouped by educational qualification")
+            image3_path = "images/Types of vehicle used grouped by educational qualification.png"
+            img_str3 = load_image(image3_path)
+            if img_str3:
+                st.image(f"data:image/png;base64,{img_str3}", caption="Types of vehicles used grouped by education", use_column_width=True)
 
-        st.subheader("3. Types of vehicles grouped by employment status")
-        image4_path = "images/Types of vehicle grouped by employment status.png"
-        img_str4 = load_image(image4_path)
-        if img_str4:
-            st.image(f"data:image/png;base64,{img_str4}", caption="Types of vehicles grouped by employment status", use_column_width=True)
+            st.subheader("3. Types of vehicles grouped by employment status")
+            image4_path = "images/Types of vehicle grouped by employment status.png"
+            img_str4 = load_image(image4_path)
+            if img_str4:
+                st.image(f"data:image/png;base64,{img_str4}", caption="Types of vehicles grouped by employment status", use_column_width=True)
         #Chi-square Test
         elif opts == "Chi-square Test":
             st.title("Chi Square Test - Independence of Attributes")
