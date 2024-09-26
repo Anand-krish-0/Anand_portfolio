@@ -1,12 +1,13 @@
 import streamlit as st
 import base64
+import os
 import pandas as pd
 import numpy as np
 from project_page import projects
 from certificates_page import certificates
 
 # App title
-st.set_page_config(page_title="Data Science Portfolio", page_icon="📊")
+st.set_page_config(page_title="Anand's Portfolio", page_icon="📊")
 
 # CSS for professional background
 st.markdown("""
@@ -49,8 +50,9 @@ st.markdown("""
 
 # Function to convert image to base64
 def get_base64_image(image_path):
-    with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode()
+    if os.path.exists(image_path):
+        with open(image_path, "rb") as image_file:
+            return base64.b64encode(image_file.read()).decode()
 
 # Image path
 image_path = r"images\profile pic.jpg"  # Use forward slashes or raw strings to avoid path issues
