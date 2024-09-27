@@ -24,12 +24,37 @@ def projects():
         st.write("View raw project files through GitHub")
 
         if st.button("View Raw Files"):
-                js = """
-                    <script type="text/javascript">
-                    window.open("https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs", "_blank").focus();
-                    </script>
-                    """
-                st.markdown(js, unsafe_allow_html=True)
+                import streamlit as st
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import webbrowser
+import base64
+from io import BytesIO
+from PIL import Image
+
+def projects():
+    st.title("Projects")
+
+    # Create tabs correctly
+    tab1, tab2, tab3, tab4 = st.tabs(["Awareness of EV's in Tamil Nadu", "Streamlit Projects",
+                                      "ML projects", "Data Analysis projects"])
+
+    with tab1:
+        st.header("Awareness level of Electric Vehicles in Tamilnadu")
+        st.write("""
+            In this project, I analyzed the awareness level of Electric Vehicles in Tamil Nadu. 
+            Data are collected directly from people using a Google form.
+        """)
+        st.write("View raw project files through GitHub")
+
+        if st.button("View Raw Files"):
+                st.markdown(
+                    '<a href="https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs" target="_blank">View Raw Files</a>',
+                    unsafe_allow_html=True
+                    )
+
 
         # Load dataset
         @st.cache_data
