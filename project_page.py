@@ -291,11 +291,13 @@ def projects():
                      """)
             st.markdown("Model performance:")
             st.success("""The support vector machine model achieved an accuracy of 77.27% in prediction.""")
-            def open_diabetes_website():
-                webbrowser.open_new_tab("https://anand-krish-0-diabetics-app-seyp9h.streamlit.app/")
             if st.button("Open Diabetes Prediction App"):
-                open_diabetes_website()
-
+                js = '''
+                    <script type="text/javascript">
+                    window.open("https://anand-krish-0-diabetics-app-seyp9h.streamlit.app/", "_blank");
+                    </script>
+                '''
+                st.markdown(js, unsafe_allow_html=True)
         with st.container():
 
             # 2. Loan Status Prediction
