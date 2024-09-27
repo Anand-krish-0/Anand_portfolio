@@ -303,8 +303,8 @@ def projects():
     with tab2:
 
         st.title("Predictive Systems Created Using Streamlit")
-        st.write("Click here to")
-        st.markdown(
+        
+        st.markdown("Click here to"
                 '<a href="https://github.com/Anand-krish-0/q_l_project/tree/main/ML_project_streamlit" target="_blank">View Raw Files</a>',
                 unsafe_allow_html=True
                 )
