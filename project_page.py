@@ -23,8 +23,11 @@ def projects():
         """)
         st.write("View raw project files through GitHub")
 
-        if st.button("view raw files"):
-            webbrowser.open_new_tab("https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs")
+        if st.button("View Raw Files"):
+            st.markdown(
+                "[Click here to view raw files](https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs)",
+                unsafe_allow_html=True
+            )
 
         # Load dataset
         @st.cache_data
