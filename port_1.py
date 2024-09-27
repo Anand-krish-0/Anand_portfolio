@@ -167,10 +167,10 @@ if page == "About me":
         </a> 
         <a href="https://github.com/Anand-krish-0" target="_blank">GitHub Profile</a>
         <br>
-        <a href="https://www.linkedin.com/in/anandakrishnan-19bma114" target="_blank">
+        <a href="https://www.linkedin.com/in/anandakrishnan-19bma114-4135852a5" target="_blank">
             <img src="{linkedin_logo_url}" alt="LinkedIn" style="width:30px; height:30px;">
         </a> 
-        <a href="https://www.linkedin.com/in/anandakrishnan-19bma114" target="_blank">LinkedIn Profile</a>
+        <a href="https://www.linkedin.com/in/anandakrishnan-19bma114-4135852a5" target="_blank">LinkedIn Profile</a>
         """, unsafe_allow_html=True)
 
     #st.markdown("Find me on [GitHub](https://github.com/Anand-krish-0) | [LinkedIn](https://www.linkedin.com/in/anandakrishnan-19bma114) ")
