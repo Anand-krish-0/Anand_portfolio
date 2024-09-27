@@ -23,11 +23,10 @@ def projects():
         """)
         st.write("View raw project files through GitHub")
 
-        if st.button("View Raw Files"):
-                st.markdown(
-                    '<a href="https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs" target="_blank">View Raw Files</a>',
-                    unsafe_allow_html=True
-                    )
+        st.markdown(
+            'Click To <a href="https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs" target="_blank">View Raw Files</a>',
+            unsafe_allow_html=True
+            )
 
 
         # Load dataset
@@ -277,7 +276,7 @@ def projects():
     with tab2:
 
         st.title("Predictive Systems Created Using Streamlit")
-        st.markdown("Click here to"
+        st.markdown("Click To"
                 '<a href="https://github.com/Anand-krish-0/q_l_project/tree/main/ML_project_streamlit" target="_blank">View Raw Files</a>',
                 unsafe_allow_html=True
                 )
