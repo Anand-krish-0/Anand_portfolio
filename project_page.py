@@ -23,7 +23,7 @@ def projects():
         """)
         st.write("View raw project files through GitHub")
 
-        if st.button("View Raw Files", key="view_raw_files_button"):
+        if st.button("View Raw Files"):
             st.markdown(
                 "[Click here to view raw files](https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs)",
                 unsafe_allow_html=True
