@@ -290,7 +290,7 @@ def projects():
                         """)
             st.markdown("Model performance:")
             st.success("The support vector machine model achieved an accuracy of 77.27% in prediction.")
-            st.markdown('<a href="https://anand-krish-0-diabetics-app-seyp9h.streamlit.app/" target="_blank">Open Diabetes Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-diabetics-app-seyp9h.streamlit.app/" target="_blank">Open Diabetes Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -302,7 +302,7 @@ def projects():
                         The model used is a Support Vector Machine (SVM), which is a supervised machine learning algorithm""")
             st.markdown("Model performance:")
             st.success("The support vector machine model achieved an accuracy of 83.33% in prediction.")
-            st.markdown('<a href="https://anand-krish-0-2-loan-status-prediction-ml5-predic-page-hjqcwk.streamlit.app/" target="_blank">Open Loan Status Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-2-loan-status-prediction-ml5-predic-page-hjqcwk.streamlit.app/" target="_blank">Open Loan Status Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -325,7 +325,7 @@ def projects():
                         """)
             st.markdown("Model performance:")
             st.success("The XGBoost model achieved an accuracy of XX.XX% in prediction.")  # Replace XX.XX% with actual accuracy
-            st.markdown('<a href="https://anand-krish-0-3-house-price-predi-house-price-prediction-e5gi5d.streamlit.app/" target="_blank">Open House Price Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-3-house-price-predi-house-price-prediction-e5gi5d.streamlit.app/" target="_blank">Open House Price Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -342,7 +342,7 @@ def projects():
                         """)
             st.markdown("Model preparation:")
             st.success("The Logistic Regression model achieved an accuracy of 97.93% in prediction.")
-            st.markdown('<a href="https://anand-krish-0-4-fake-news-predictio-fake-news-prediction-0v5nel.streamlit.app/" target="_blank">Open Fake News Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-4-fake-news-predictio-fake-news-prediction-0v5nel.streamlit.app/" target="_blank">Open Fake News Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -360,7 +360,7 @@ def projects():
                         """)
             st.markdown("Model preparation:")
             st.success("The Lasso Regression model achieved an accuracy of 87.09% in prediction.")
-            st.markdown('<a href="https://anand-krish-0-5-car-price-predictio-car-price-prediction-v3uyxy.streamlit.app/" target="_blank">Open Car Price Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-5-car-price-predictio-car-price-prediction-v3uyxy.streamlit.app/" target="_blank">Open Car Price Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -377,7 +377,7 @@ def projects():
                         """)
             st.markdown("Model performance:")
             st.success("The Random Forest Classifier model achieved an accuracy of 92.81% in prediction.")
-            st.markdown('<a href="https://anand-krish-0-5-wine-quality-pre-wine-quality-prediction-glroej.streamlit.app/" target="_blank">Open Wine Quality Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-5-wine-quality-pre-wine-quality-prediction-glroej.streamlit.app/" target="_blank">Open Wine Quality Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -392,7 +392,7 @@ def projects():
                         reliable and robust price predictions, aiding in better investment decisions.
                         """)
             st.success("Model: Random Forest Regressor")
-            st.markdown('<a href="https://anand-krish-0-7-gold-price-predict-gold-price-prediction-dxpte7.streamlit.app/" target="_blank">Open Gold Price Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-7-gold-price-predict-gold-price-prediction-dxpte7.streamlit.app/" target="_blank">Open Gold Price Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -408,7 +408,7 @@ def projects():
                         """)
             st.markdown("Model performance:")
             st.success("The Logistic Regression model achieved an accuracy of 90.16% in prediction.")
-            st.markdown('<a href="https://anand-krish-0-8-heart-disease-p-heart-disease-prediction-xxsppv.streamlit.app/" target="_blank">Open Heart Disease Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-8-heart-disease-p-heart-disease-prediction-xxsppv.streamlit.app/" target="_blank">Open Heart Disease Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -422,7 +422,7 @@ def projects():
                         By analyzing historical data, the Linear Regression model helps identify key drivers 
                         of insurance costs, providing insights for individuals and insurers alike.
                         """)
-            st.markdown('<a href="https://anand-krish-0-9-medica-medical-insurance-cost-prediction-69bjvr.streamlit.app/" target="_blank">Open Medical Insurance Cost Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-9-medica-medical-insurance-cost-prediction-69bjvr.streamlit.app/" target="_blank">Open Medical Insurance Cost Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
@@ -435,7 +435,7 @@ def projects():
                         """)
             st.markdown("Model performance:")
             st.success("The Logistic Regression model achieved an accuracy of 96.68% in prediction.")
-            st.markdown('<a href="https://anand-krish-0-spam-mail-prediction-spam-mail-prediction-tusyy0.streamlit.app/" target="_blank">Open Spam Mail Prediction App</a>',
+            st.markdown('Click here to <a href="https://anand-krish-0-spam-mail-prediction-spam-mail-prediction-tusyy0.streamlit.app/" target="_blank">Open Spam Mail Prediction App</a>',
                         unsafe_allow_html=True)
 
     
