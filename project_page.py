@@ -331,7 +331,8 @@ def projects():
         with st.container():
             # 4. Fake News Prediction
             st.subheader("4. Fake News Prediction")
-            st.write("""This project focuses on detecting fake news by analyzing the text of news articles. 
+            st.write("""
+                        This project focuses on detecting fake news by analyzing the text of news articles. 
                         The model leverages NLTK (Natural Language Toolkit) for text preprocessing, TfidfVectorizer to 
                         convert the text into numerical features based on term frequency-inverse document frequency 
                         (TF-IDF), and Logistic Regression for classification.
