@@ -125,7 +125,9 @@ if page == "About me":
     def read_pdf(file_path):
         if os.path.exists(file_path):
             with open(file_path, "rb") as pdf_file:
-                return pdf_file.read()
+                data = pdf_file.read()
+                #st.write(f"Data Length: {len(data)} bytes")  # Output the size of the data
+                return data
         else:
             st.error(f"File not found: {file_path}")
             return None
