@@ -303,11 +303,11 @@ def projects():
     with tab2:
 
         st.title("Predictive Systems Created Using Streamlit")
-        if st.button("View Raw Files"):
-            st.markdown(
-                    '<a href="https://github.com/Anand-krish-0/q_l_project/tree/main/ML_project_streamlit" target="_blank"></a>',
-                    unsafe_allow_html=True
-                    )
+        st.write("Click here to")
+        st.markdown(
+                '<a href="https://github.com/Anand-krish-0/q_l_project/tree/main/ML_project_streamlit" target="_blank">View Raw Files</a>',
+                unsafe_allow_html=True
+                )
 
         with st.container():
             # 1. Diabetes Prediction
