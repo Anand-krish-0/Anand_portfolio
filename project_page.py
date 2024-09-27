@@ -332,15 +332,14 @@ def projects():
             # 4. Fake News Prediction
             st.subheader("4. Fake News Prediction")
             st.write("""
-                        This project focuses on detecting fake news by analyzing the text of news articles. 
-                        The model leverages NLTK (Natural Language Toolkit) for text preprocessing, TfidfVectorizer to 
-                        convert the text into numerical features based on term frequency-inverse document frequency 
-                        (TF-IDF), and Logistic Regression for classification.
+                     This project focuses on detecting fake news by analyzing the text of news articles. 
+                     The model leverages NLTK (Natural Language Toolkit) for text preprocessing, TfidfVectorizer to 
+                     convert the text into numerical features based on term frequency-inverse document frequency 
+                     (TF-IDF), and Logistic Regression for classification.
 
-                        By training on labeled datasets, the model learns to differentiate between real and fake 
-                        news, making predictions based on the textual content, aiding in identifying misleading or 
-                        false information in media
-                        """)
+                     By training on labeled datasets, the model learns to differentiate between real and fake 
+                     news, making predictions based on the textual content, aiding in identifying misleading or                         false information in media
+                     """)
             st.markdown("Model preparation:")
             st.success("The Logistic Regression model achieved an accuracy of 97.93% in prediction.")
             st.markdown('Click here to <a href="https://anand-krish-0-4-fake-news-predictio-fake-news-prediction-0v5nel.streamlit.app/" target="_blank">Open Fake News Prediction App</a>',
@@ -349,16 +348,17 @@ def projects():
         with st.container():
             # 5. Car Price Prediction
             st.subheader("5. Car Price Prediction")
-            st.write("""This project aims to predict the selling price of used cars using 
-                        Lasso Regression, a linear model that applies L1 regularization to prevent 
-                        overfitting and handle feature selection. The model analyzes various features 
-                        like the car's age, mileage, engine size, fuel type, and more, to make accurate 
-                        predictions.
+            st.write("""
+                     This project aims to predict the selling price of used cars using 
+                     Lasso Regression, a linear model that applies L1 regularization to prevent 
+                     overfitting and handle feature selection. The model analyzes various features 
+                     like the car's age, mileage, engine size, fuel type, and more, to make accurate 
+                     predictions.
 
-                        By penalizing less important features, Lasso Regression simplifies the model, 
-                        ensuring robust predictions while avoiding unnecessary complexity, making it 
-                        an ideal choice for estimating car prices in dynamic markets.
-                        """)
+                     By penalizing less important features, Lasso Regression simplifies the model, 
+                     ensuring robust predictions while avoiding unnecessary complexity, making it 
+                     an ideal choice for estimating car prices in dynamic markets.
+                     """)
             st.markdown("Model preparation:")
             st.success("The Lasso Regression model achieved an accuracy of 87.09% in prediction.")
             st.markdown('Click here to <a href="https://anand-krish-0-5-car-price-predictio-car-price-prediction-v3uyxy.streamlit.app/" target="_blank">Open Car Price Prediction App</a>',
