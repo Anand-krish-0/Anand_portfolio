@@ -367,15 +367,16 @@ def projects():
         with st.container():
             # 6. Wine Quality Prediction
             st.subheader("6. Wine Quality Prediction")
-            st.write("""In this project, a Random Forest Classifier is employed to predict the quality of 
-                        wine based on various chemical properties like acidity, sugar content, pH levels, 
-                        and alcohol concentration. The model creates multiple decision trees and combines 
-                        their outputs to enhance prediction accuracy.
+            st.write("""
+                     In this project, a Random Forest Classifier is employed to predict the quality of 
+                     wine based on various chemical properties like acidity, sugar content, pH levels, 
+                     and alcohol concentration. The model creates multiple decision trees and combines 
+                     their outputs to enhance prediction accuracy.
 
-                        By leveraging the ensemble technique, the Random Forest algorithm provides 
-                        robust and reliable predictions, making it effective for determining wine 
-                        quality with high precision.
-                        """)
+                     By leveraging the ensemble technique, the Random Forest algorithm provides 
+                     robust and reliable predictions, making it effective for determining wine 
+                     quality with high precision.
+                     """)
             st.markdown("Model performance:")
             st.success("The Random Forest Classifier model achieved an accuracy of 92.81% in prediction.")
             st.markdown('Click here to <a href="https://anand-krish-0-5-wine-quality-pre-wine-quality-prediction-glroej.streamlit.app/" target="_blank">Open Wine Quality Prediction App</a>',
@@ -384,14 +385,15 @@ def projects():
         with st.container():
             # 7. Gold Price Prediction
             st.subheader("7. Gold Price Prediction")
-            st.write("""This project utilizes a Random Forest Regressor to predict gold prices based on 
-                        historical market data and other financial indicators. The model constructs 
-                        multiple decision trees and averages their predictions to deliver accurate and 
-                        stable forecasts of gold prices.
+            st.write("""
+                     This project utilizes a Random Forest Regressor to predict gold prices based on 
+                     historical market data and other financial indicators. The model constructs 
+                     multiple decision trees and averages their predictions to deliver accurate and 
+                     stable forecasts of gold prices.
 
-                        By capturing complex patterns in the data, the Random Forest algorithm ensures 
-                        reliable and robust price predictions, aiding in better investment decisions.
-                        """)
+                     By capturing complex patterns in the data, the Random Forest algorithm ensures 
+                     reliable and robust price predictions, aiding in better investment decisions.
+                     """)
             st.success("Model: Random Forest Regressor")
             st.markdown('Click here to <a href="https://anand-krish-0-7-gold-price-predict-gold-price-prediction-dxpte7.streamlit.app/" target="_blank">Open Gold Price Prediction App</a>',
                         unsafe_allow_html=True)
@@ -399,14 +401,15 @@ def projects():
         with st.container():
             # 8. Heart Disease Prediction
             st.subheader("8. Heart Disease Prediction")
-            st.write("""This project uses a Logistic Regression model to predict the likelihood of heart 
-                        disease in individuals based on key health indicators such as age, cholesterol 
-                        levels, blood pressure, and other medical features. The model provides a binary 
-                        output, helping identify patients at risk of heart disease with high accuracy.
+            st.write("""
+                     This project uses a Logistic Regression model to predict the likelihood of heart 
+                     disease in individuals based on key health indicators such as age, cholesterol 
+                     levels, blood pressure, and other medical features. The model provides a binary 
+                     output, helping identify patients at risk of heart disease with high accuracy.
 
-                        Logistic regression is well-suited for this task due to its efficiency in binary 
-                        classification problems, making it a reliable tool for medical predictions.
-                        """)
+                     Logistic regression is well-suited for this task due to its efficiency in binary 
+                     classification problems, making it a reliable tool for medical predictions.
+                     """)
             st.markdown("Model performance:")
             st.success("The Logistic Regression model achieved an accuracy of 90.16% in prediction.")
             st.markdown('Click here to <a href="https://anand-krish-0-8-heart-disease-p-heart-disease-prediction-xxsppv.streamlit.app/" target="_blank">Open Heart Disease Prediction App</a>',
@@ -415,25 +418,27 @@ def projects():
         with st.container():
             # 9. Medical Insurance Cost Prediction
             st.subheader("9. Medical Insurance Cost Prediction")
-            st.write("""This project uses Linear Regression to predict medical insurance costs based on 
-                        factors such as age, sex, body mass index (BMI), number of children, smoking status,
-                        and region. The model establishes a linear relationship between these features and 
-                        the insurance premium, enabling accurate cost estimates.
+            st.write("""
+                     This project uses Linear Regression to predict medical insurance costs based on 
+                     factors such as age, sex, body mass index (BMI), number of children, smoking status,
+                     and region. The model establishes a linear relationship between these features and 
+                     the insurance premium, enabling accurate cost estimates.
 
-                        By analyzing historical data, the Linear Regression model helps identify key drivers 
-                        of insurance costs, providing insights for individuals and insurers alike.
-                        """)
+                     By analyzing historical data, the Linear Regression model helps identify key drivers 
+                     of insurance costs, providing insights for individuals and insurers alike.
+                     """)
             st.markdown('Click here to <a href="https://anand-krish-0-9-medica-medical-insurance-cost-prediction-69bjvr.streamlit.app/" target="_blank">Open Medical Insurance Cost Prediction App</a>',
                         unsafe_allow_html=True)
 
         with st.container():
             # 10. Spam Mail Prediction
             st.subheader("10. Spam Mail Prediction")
-            st.write("""This project utilizes TfidfVectorizer to convert email text into numerical features and 
-                        Logistic Regression to classify emails as spam or not. By analyzing the frequency and 
-                        importance of words in the email content, the model effectively distinguishes between 
-                        legitimate and spam emails, improving email filtering accuracy.
-                        """)
+            st.write("""
+                     This project utilizes TfidfVectorizer to convert email text into numerical features and 
+                     Logistic Regression to classify emails as spam or not. By analyzing the frequency and 
+                     importance of words in the email content, the model effectively distinguishes between 
+                     legitimate and spam emails, improving email filtering accuracy.
+                     """)
             st.markdown("Model performance:")
             st.success("The Logistic Regression model achieved an accuracy of 96.68% in prediction.")
             st.markdown('Click here to <a href="https://anand-krish-0-spam-mail-prediction-spam-mail-prediction-tusyy0.streamlit.app/" target="_blank">Open Spam Mail Prediction App</a>',
@@ -453,7 +458,7 @@ def projects():
                  various fields, including healthcare, finance, marketing, and natural language processing, solving 
                  problems like predictive analytics, classification, and recommendation systems.
                  """)
-        st.markdown('<a href="https://github.com/Anand-krish-0/q_l_project/tree/main/machine_learning" target="_blank">View Machine Learning Projects</a>', unsafe_allow_html=True)
+        st.markdown('Click To <a href="https://github.com/Anand-krish-0/q_l_project/tree/main/machine_learning" target="_blank">View Machine Learning Projects</a>', unsafe_allow_html=True)
 
     with tab4:
         st.title("Data Analysis Projects")
@@ -466,4 +471,4 @@ def projects():
                  insights from raw data across domains such as business, healthcare, finance, and social sciences. 
                  These projects often lead to more informed strategies and better outcomes
                  """)
-        st.markdown('<a href="https://github.com/Anand-krish-0/EDA-lilst" target="_blank">View Data Analysis Projects</a>', unsafe_allow_html=True)
+        st.markdown('Click To <a href="https://github.com/Anand-krish-0/EDA-lilst" target="_blank">View Data Analysis Projects</a>', unsafe_allow_html=True)
