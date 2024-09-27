@@ -24,10 +24,12 @@ def projects():
         st.write("View raw project files through GitHub")
 
         if st.button("View Raw Files"):
-            st.markdown(
-                "[Click here to view raw files](https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs)",
-                unsafe_allow_html=True
-                )
+                js = """
+                    <script type="text/javascript">
+                    window.open("https://github.com/Anand-krish-0/A-study-on-awareness-and-perceptionn-among-the-users-of-EVs", "_blank").focus();
+                    </script>
+                    """
+                st.markdown(js, unsafe_allow_html=True)
 
         # Load dataset
         @st.cache_data
