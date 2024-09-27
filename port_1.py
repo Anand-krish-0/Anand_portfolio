@@ -118,7 +118,7 @@ if page == "About me":
     # Resume Download Section
     st.subheader("My Resume")
 
-    file_path = "files\ANANDAKRISHNAN_N.pdf"
+    resume_file_path = "files\ANANDAKRISHNAN_N.pdf"
 
     # Function to read the PDF file
 
