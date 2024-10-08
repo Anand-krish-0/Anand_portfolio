@@ -76,7 +76,7 @@ def projects():
         df = load_data()
 
         # Create a labeled selectbox
-        opts = st.selectbox("Select an analysis option", ["About dataset", "Univariate analysis", "Bivariate Analysis","Chi-square Test","Chi-square Results", "Chi-square Conclusion"])
+        opts = st.selectbox("Select an analysis option", ["About dataset", "Univariate analysis", "Bivariate Analysis","Chi-square Test","Chi-square Results", "Chi-square Conclusion", "Principal Component Analysis", "Hierarchical Agglomerative Clustering"])
 
         if opts == "About dataset":
             # Show the dataset
@@ -86,6 +86,43 @@ def projects():
             # Display data summary
             st.subheader("2. Data Summary")
             st.write(df.describe(include='all'))
+
+            # Displaying all dataset features in one st.write
+            st.write("""
+            ### Dataset Features:
+
+            #### Demographics:
+            - Name
+            - Gender
+            - Age
+            - Employment Status
+            - Education Qualification
+            - District
+            - Area of Residence
+
+            #### Vehicle Information:
+            - Type of Vehicle
+            - EV (Electric Vehicle)
+
+            #### Current Awareness:
+            - Features related to users' awareness of EVs (1.1 - 1.4)
+
+            #### User Satisfaction:
+            - Satisfaction metrics regarding EVs (2.1 - 2.5)
+
+            #### Charging Facilities:
+            - Availability and quality of charging infrastructure (3.1 - 3.4)
+
+            #### Cost Considerations:
+            - Financial aspects related to EVs (4.1 - 4.5)
+
+            #### Consumer Preferences:
+            - Preferences regarding EV features (5.1 - 5.5)
+
+            #### EVM Considerations:
+            - Maintenance-related features (6.1 - 6.4)
+            """)
+
 
         elif opts == "Univariate analysis":
             st.header("Univariate Analysis")
@@ -309,6 +346,146 @@ def projects():
                      EV adoption, as it highlights the immportance of targeting potential buyers with 
                      effective awareness campaigns.
                      """)
+        if opts == "Principal Component Analysi":
+
+            # Displaying the PCA description in one st.write
+            st.write("""
+            ### 1. Principal Component Analysis (PCA)
+
+            **Purpose**: PCA is a dimensionality reduction technique that helps to simplify complex datasets by 
+            transforming them into a lower-dimensional space while retaining as much variance as possible. 
+            In the context of this project, PCA serves the following purposes:
+
+            - **Data Simplification**: The dataset comprises numerous features related to user demographics, awareness, 
+            satisfaction, and preferences. PCA helps in reducing this complexity by summarizing 
+            the essential information into fewer components, making it easier to visualize and 
+            interpret the data.
+
+            - **Variance Retention**: By identifying the directions (principal components) in which the data varies 
+            the most, PCA ensures that the most critical aspects of the data are preserved. 
+            This allows for meaningful insights into user behavior and attitudes toward electric 
+            vehicles.
+
+            - **Facilitating Clustering**: The reduced dimensions from PCA enable more efficient clustering. It enhances 
+            the clustering algorithm's performance and interpretability by minimizing noise 
+            and irrelevant features, thereby allowing for clearer separation between 
+            different user segments.
+            """)
+
+        if opts == "Hierarchical Agglomerative Clustering":
+            
+            # Displaying the Clustering section in one st.write
+            st.write("""
+            ### 2. Clustering
+
+            #### Role of Hierarchical Agglomerative Clustering (HAC)
+
+            **Purpose**: Hierarchical Agglomerative Clustering (HAC) is an unsupervised learning technique used to group 
+            similar data points based on their features. In this project, HAC helps identify distinct user segments 
+            based on awareness and perception of electric vehicles (EVs).
+
+            #### Key Contributions:
+
+            - **User Segmentation**: HAC groups users into clusters, revealing patterns in their attitudes towards EVs.
+
+            - **Visual Insights**: The dendrogram produced by HAC visually represents the relationships between clusters, 
+            aiding in understanding user similarities and differences.
+
+            - **Targeted Strategies**: By analyzing each cluster's characteristics, stakeholders can develop tailored 
+            interventions, such as awareness campaigns or financial incentives, to address specific user needs and enhance EV adoption.
+
+            #### Conclusion:
+            HAC plays a crucial role in uncovering insights about user perceptions of EVs, facilitating informed 
+            decision-making to promote electric vehicle adoption in Tamil Nadu.
+            """)
+            
+            # Displaying the Cluster Analysis Results and Insights in one st.write
+            st.write("""
+            ### Cluster Analysis Results:
+
+            - **Cluster 0**: 126 users - Likely high awareness and positive perceptions of EVs.
+            - **Cluster 1**: 70 users - Moderate awareness and mixed feelings about EVs.
+            - **Cluster 2**: 5 users - Low awareness or negative perceptions of EVs.
+
+            ### Cluster Analysis and Insights:
+
+            #### 1. Cluster Distribution:
+
+            - **Cluster 0 (126 users)**: This cluster represents the majority of your respondents. They may have a high 
+            level of awareness and positive perception regarding electric vehicles. Further 
+            analysis of their demographics (e.g., age, education, employment status) could 
+            provide insights into what drives their favorable perception.
+
+            - **Cluster 1 (70 users)**: This group has moderate awareness or mixed feelings about EVs. Analyzing the user 
+            satisfaction and cost consideration features for this cluster could highlight areas 
+            that need improvement to enhance their perception of EVs.
+
+            - **Cluster 2 (5 users)**: This small cluster likely includes individuals with low awareness or negative 
+            perceptions about EVs. Understanding their characteristics and concerns can help 
+            develop targeted interventions to improve their attitudes.
+
+            #### Demographic Factors:
+            Analyzing the demographic features (like gender, age, employment status, and education) in relation to 
+            each cluster can reveal patterns. For example, you may find that younger individuals or those with 
+            higher education levels are more represented in Cluster 0, indicating a correlation between education and 
+            awareness of EVs.
+
+            #### Current Awareness:
+            The features related to "current awareness" (1.1 to 1.4) can be analyzed to determine how 
+            awareness levels vary among clusters. If Cluster 0 scores significantly higher in these 
+            features, it confirms their positive attitude towards EVs. For Clusters 1 and 2, 
+            identifying which aspects of awareness are lacking can guide educational initiatives.
+
+            #### User Satisfaction:
+            The user satisfaction features (2.1 to 2.5) can be assessed to gauge the level of 
+            contentment with current EV options. If Clusters 1 and 2 show lower satisfaction scores, 
+            it may indicate issues with vehicle performance, support services, or user experience, 
+            providing a focus area for manufacturers and policymakers.
+
+            #### Charging Facilities:
+            Features related to charging facilities (3.1 to 3.4) are critical for EV adoption. Analyzing 
+            responses can reveal whether accessibility to charging infrastructure is a barrier for 
+            Clusters 1 and 2. Users in these clusters might express concerns about the availability or 
+            convenience of charging stations.
+
+            #### Cost Considerations:
+            Assessing the cost-related features (4.1 to 4.5) can provide insights into how financial 
+            factors influence user perceptions. If Clusters 1 and 2 have significant concerns about 
+            cost, this suggests a need for financial incentives or more affordable EV options to 
+            encourage adoption.
+
+            #### Consumer Preferences:
+            Understanding preferences (5.1 to 5.5) regarding vehicle types, brands, and features among 
+            different clusters can help tailor marketing strategies. Cluster 0 might prioritize features 
+            like sustainability, while Clusters 1 and 2 might have more traditional preferences that 
+            need to be addressed.
+
+            #### EVM Considerations:
+            Features related to electric vehicle maintenance (6.1 to 6.4) should be examined to 
+            understand how maintenance perceptions influence overall satisfaction and awareness. 
+            If Clusters 1 and 2 show concerns about maintenance, manufacturers might consider addressing 
+            these in their communication.
+
+            ### Conclusions and Recommendations:
+            - **Targeted Awareness Campaigns**: Based on the findings, targeted awareness campaigns could be 
+            developed to address the specific concerns and knowledge gaps identified in Clusters 1 and 2. 
+            This can help in improving overall perceptions of electric vehicles.
+
+            - **Enhancing User Experience**: Gathering feedback from Clusters 1 and 2 can lead to improvements in user satisfaction, 
+            focusing on aspects like charging facilities, customer service, and overall vehicle experience.
+
+            - **Policy Implications**: Policymakers should consider financial incentives for EV adoption and the development of 
+            charging infrastructure to alleviate concerns related to costs and accessibility, 
+            particularly for users in Clusters 1 and 2.
+
+            - **Further Research**: Future studies could explore qualitative aspects through interviews or focus groups to 
+            deepen the understanding of users' perceptions and barriers to EV adoption.
+            """)
+
+
+
+
+        
  
 
 
