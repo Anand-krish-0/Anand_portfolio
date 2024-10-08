@@ -29,6 +29,45 @@ def projects():
             )
 
 
+        # Dataset Features
+
+        dataset_features = """
+        Demographics:
+            - Name
+            - Gender
+            - Age
+            - Employment Status
+            - Education Qualification
+            - District
+            - Area of Residence
+
+        Vehicle Information:
+            - Type of Vehicle
+            - EV (Electric Vehicle)
+
+        Current Awareness:
+            - Features related to users' awareness of EVs (1.1 - 1.4)
+
+        User Satisfaction:
+            - Satisfaction metrics regarding EVs (2.1 - 2.5)
+
+        Charging Facilities:
+            - Availability and quality of charging infrastructure (3.1 - 3.4)
+
+        Cost Considerations:
+            - Financial aspects related to EVs (4.1 - 4.5)
+
+        Consumer Preferences:
+            - Preferences regarding EV features (5.1 - 5.5)
+
+        EVM Considerations:
+            - Maintenance-related features (6.1 - 6.4)
+        """
+
+        # Print the dataset features
+        print(dataset_features)
+
+
         # Load dataset
         @st.cache_data
         def load_data():
@@ -37,7 +76,7 @@ def projects():
         df = load_data()
 
         # Create a labeled selectbox
-        opts = st.selectbox("Select an analysis option", ["About dataset", "Univariate analysis", "Bivariate Analysis","Chi-square Test","Results", "Final Conclusion"])
+        opts = st.selectbox("Select an analysis option", ["About dataset", "Univariate analysis", "Bivariate Analysis","Chi-square Test","Chi-square Results", "Chi-square Conclusion"])
 
         if opts == "About dataset":
             # Show the dataset
@@ -177,7 +216,7 @@ def projects():
                         - 8. **Draw conlusion**: Intereptinng the results regardinng awareness levels.
                         """)
 
-        elif opts == "Results":
+        elif opts == "Chi-square Results":
             st.header("Results of Chi-square test")
             st.write("""
                      ### After Performing Chi-square Test for Independence of Attributes :
@@ -240,7 +279,7 @@ def projects():
                      EV buyers and non-buyers. EV buyers and non-buyers may influence how aware 
                      individuals are of electric vehicles.
                      """)
-        if opts == "Final Conclusion":
+        if opts == "Chi-square Conclusion":
             st.write("""
                      ## Final Conclusion:
 
