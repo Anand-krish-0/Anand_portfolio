@@ -37,12 +37,19 @@ def clusterpage():
             st.error(f"Error loading image {image_path}: {e}")
             return None
 
-    st.header("Principal Component Analysis(PCA) and Clustering")
+    # Display section header
+    st.header("Principal Component Analysis (PCA) and Clustering")
     st.subheader("Clustered Datapoints")
-    image1_path = "images/cluster_image.png"
-    img_str1 = load_image(image1_path)
-    if img_str1:
-        st.image(f"data:image/png;base64,{img_str1}", caption="Clustered Datapoints", use_column_width=True)
+
+    # Specify the image path (use forward slashes)
+    image_path = "images/cluster_image.png"  # Corrected path
+
+    # Load the image
+    img_str = load_image(image_path)
+
+    # Display the image if it was loaded successfully
+    if img_str:
+        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Datapoints", use_column_width=True)
 
     # Displaying the Clustering section in one st.write
     st.write("""
