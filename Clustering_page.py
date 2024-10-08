@@ -19,7 +19,7 @@ def clusterpage():
 
     st.header("Principal Component Analysis(PCA) and Clustering")
     st.subheader("Clustered Datapoints")
-    image_path_ = "images\cluster_image.png"
+    image_path_ = "images/cluster_image.png"
     img_str = load_image(image_path_)
     if img_str:
         st.image(f"data:image/png;base64,{img_str}", caption="Clustered Datapoints", use_column_width=True)
