@@ -21,6 +21,8 @@ def clusterpage():
     st.subheader("Clustered Datapoints")
     image_path = "images\cluster_image.png"
     img_str = load_image(image_path)
+    if img_str:
+        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Datapoints", use_column_width=True)
 
     # Displaying the Clustering section in one st.write
     st.write("""
