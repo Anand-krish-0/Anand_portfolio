@@ -77,7 +77,20 @@ def projects():
         df = load_data()
 
         # Create a labeled selectbox
-        opts = st.selectbox("Select an analysis option", ["About dataset", "Univariate analysis", "Bivariate Analysis","Chi-square Test","Chi-square Results", "Chi-square Conclusion", "Principal Component Analysis", "Hierarchical Agglomerative Clustering"])
+        # Select box for analysis options
+        opts = st.selectbox(
+            "Select an analysis option", 
+            [
+                "About dataset", 
+                "Univariate analysis", 
+                "Bivariate Analysis", 
+                "Chi-square Test", 
+                "Chi-square Results", 
+                "Chi-square Conclusion", 
+                "Principal Component Analysis", 
+                "Hierarchical Agglomerative Clustering"
+            ]
+        )
 
         if opts == "About dataset":
             # Show the dataset
@@ -351,27 +364,27 @@ def projects():
 
             # Displaying the PCA description in one st.write
             st.write("""
-            ### 1. Principal Component Analysis (PCA)
+                    ### 1. Principal Component Analysis (PCA)
 
-            **Purpose**: PCA is a dimensionality reduction technique that helps to simplify complex datasets by 
-            transforming them into a lower-dimensional space while retaining as much variance as possible. 
-            In the context of this project, PCA serves the following purposes:
+                    **Purpose**: PCA is a dimensionality reduction technique that helps to simplify complex datasets by 
+                    transforming them into a lower-dimensional space while retaining as much variance as possible. 
+                    In the context of this project, PCA serves the following purposes:
 
-            - **Data Simplification**: The dataset comprises numerous features related to user demographics, awareness, 
-            satisfaction, and preferences. PCA helps in reducing this complexity by summarizing 
-            the essential information into fewer components, making it easier to visualize and 
-            interpret the data.
+                    - **Data Simplification**: The dataset comprises numerous features related to user demographics, awareness, 
+                    satisfaction, and preferences. PCA helps in reducing this complexity by summarizing 
+                    the essential information into fewer components, making it easier to visualize and 
+                    interpret the data.
 
-            - **Variance Retention**: By identifying the directions (principal components) in which the data varies 
-            the most, PCA ensures that the most critical aspects of the data are preserved. 
-            This allows for meaningful insights into user behavior and attitudes toward electric 
-            vehicles.
+                    - **Variance Retention**: By identifying the directions (principal components) in which the data varies 
+                    the most, PCA ensures that the most critical aspects of the data are preserved. 
+                    This allows for meaningful insights into user behavior and attitudes toward electric 
+                    vehicles.
 
-            - **Facilitating Clustering**: The reduced dimensions from PCA enable more efficient clustering. It enhances 
-            the clustering algorithm's performance and interpretability by minimizing noise 
-            and irrelevant features, thereby allowing for clearer separation between 
-            different user segments.
-            """)
+                    - **Facilitating Clustering**: The reduced dimensions from PCA enable more efficient clustering. It enhances 
+                    the clustering algorithm's performance and interpretability by minimizing noise 
+                    and irrelevant features, thereby allowing for clearer separation between 
+                    different user segments.
+                    """)
 
         if opts == "Hierarchical Agglomerative Clustering":
             
