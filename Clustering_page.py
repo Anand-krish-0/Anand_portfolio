@@ -5,26 +5,6 @@ from io import BytesIO
 
 def clusterpage():
 
-    """# Helper function to load and convert images to Base64
-    def load_image(image_path):
-        try:
-            image = Image.open(image_path)  # Open the image file
-            buffered = BytesIO()
-            image.save(buffered, format="PNG")  # Convert image to bytes
-            img_str = base64.b64encode(buffered.getvalue()).decode()  # Encode as Base64
-            return img_str
-        except Exception as e:
-            st.error(f"Error loading image {image_path}: {e}")
-            return None
-
-    st.header("Principal Component Analysis(PCA) and Clustering")
-    st.subheader("Clustered Datapoints")
-    image_path_ = "C:\Users\ANAND\Documents\GitHub\portifolio\images\cluster_image.png"
-    img_str = load_image(image_path_)
-    if img_str:
-        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Datapoints", use_column_width=True)
-    """
-
     # Helper function to load and convert images to Base64
     def load_image(image_path):
         try:
@@ -42,10 +22,10 @@ def clusterpage():
     st.subheader("Clustered Datapoints")
 
     # Specify the image path (use forward slashes)
-    image_path = "images/cluster_image.png"  # Corrected path
+    image1_path = "images/cluster_image.png"  # Corrected path
 
     # Load the image
-    img_str = load_image(image_path)
+    img_str = load_image(image1_path)
 
     # Display the image if it was loaded successfully
     if img_str:
