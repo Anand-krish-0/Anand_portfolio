@@ -360,7 +360,8 @@ def projects():
                      EV adoption, as it highlights the immportance of targeting potential buyers with 
                      effective awareness campaigns.
                      """)
-        elif opts == "Principal Component Analysi":
+
+        elif opts == "Principal Component Analysis":
             # Displaying the PCA description in one st.write
             st.write("""
                      ### 1. Principal Component Analysis (PCA)
