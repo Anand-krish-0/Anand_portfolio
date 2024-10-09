@@ -62,7 +62,7 @@ def clusterpage():
         st.image(f"data:image/png;base64,{img_str2}", caption="Clustered Data", use_column_width=True)
             
 
-    st.subheader("Cluster Datapoits (3D)")
+    st.subheader("Clustered Datapoits (3D)")
 
     # Specify the image path (use forward slashes)
     image3_path = "images\cluster_points_3D.png"  # Corrected path
