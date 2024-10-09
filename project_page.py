@@ -360,11 +360,9 @@ def projects():
                      EV adoption, as it highlights the immportance of targeting potential buyers with 
                      effective awareness campaigns.
                      """)
-        if opts == "Principal Component Analysi":
+        elif opts == "Principal Component Analysi":
             # Displaying the PCA description in one st.write
             st.write("""
-                     ### 1. Principal Component Analysis (PCA)
-
                      **Purpose**: PCA is a dimensionality reduction technique that helps to simplify complex datasets by 
                      transforming them into a lower-dimensional space while retaining as much variance as possible. 
                      In the context of this project, PCA serves the following purposes:

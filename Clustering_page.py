@@ -16,25 +16,22 @@ def clusterpage():
         except Exception as e:
             st.error(f"Error loading image {image_path}: {e}")
             return None
-
+    st.header("Hierarchical Agglomerative Clustering (HAC)")
     # Display section header
-    st.header("Principal Component Analysis (PCA) and Clustering")
     st.subheader("Cluster Dendogram")
 
     # Specify the image path (use forward slashes)
     image1_path = "images/cluster_image.png"  # Corrected path
 
     # Load the image
-    img_str = load_image(image1_path)
+    img_str1 = load_image(image1_path)
 
     # Display the image if it was loaded successfully
-    if img_str:
-        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Dendogram", use_column_width=True)
+    if img_str1:
+        st.image(f"data:image/png;base64,{img_str1}", caption="Clustered Dendogram", use_column_width=True)
 
     # Displaying the Clustering section in one st.write
     st.write("""
-            ### 2. Clustering
-
             #### Role of Hierarchical Agglomerative Clustering (HAC)
 
             **Purpose**: Hierarchical Agglomerative Clustering (HAC) is an unsupervised learning technique used to group 
@@ -55,27 +52,27 @@ def clusterpage():
     st.subheader("Clustered Datapoints (2D)")
 
     # Specify the image path (use forward slashes)
-    image1_path = "images/cluster_points_2D.png"  # Corrected path
+    image2_path = "images/cluster_points_2D.png"  # Corrected path
 
     # Load the image
-    img_str = load_image(image1_path)
+    img_str2 = load_image(image2_path)
 
     # Display the image if it was loaded successfully
-    if img_str:
-        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Data", use_column_width=True)
+    if img_str2:
+        st.image(f"data:image/png;base64,{img_str2}", caption="Clustered Data", use_column_width=True)
             
 
     st.subheader("Cluster Datapoits (3D)")
 
     # Specify the image path (use forward slashes)
-    image1_path = "images/cluster_points_3D.png"  # Corrected path
+    image3_path = "images/cluster_points_3D.png"  # Corrected path
 
     # Load the image
-    img_str = load_image(image1_path)
+    img_str3 = load_image(image3_path)
 
     # Display the image if it was loaded successfully
-    if img_str:
-        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Data", use_column_width=True) 
+    if img_str3:
+        st.image(f"data:image/png;base64,{img_str3}", caption="Clustered Data", use_column_width=True) 
             # Displaying the Cluster Analysis Results and Insights in one st.write
     st.write("""
             ### Cluster Analysis Results:
