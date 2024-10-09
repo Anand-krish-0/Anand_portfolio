@@ -65,7 +65,7 @@ def clusterpage():
     st.subheader("Cluster Datapoits (3D)")
 
     # Specify the image path (use forward slashes)
-    image3_path = "images/cluster_points_3D.png"  # Corrected path
+    image3_path = "images\cluster_points_3D.png"  # Corrected path
 
     # Load the image
     img_str3 = load_image(image3_path)
