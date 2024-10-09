@@ -330,7 +330,7 @@ def projects():
                      EV buyers and non-buyers. EV buyers and non-buyers may influence how aware 
                      individuals are of electric vehicles.
                      """)
-        if opts == "Chi-square Conclusion":
+        elif opts == "Chi-square Conclusion":
             st.write("""
                      ## Final Conclusion:
 
@@ -361,7 +361,6 @@ def projects():
                      effective awareness campaigns.
                      """)
         if opts == "Principal Component Analysi":
-
             # Displaying the PCA description in one st.write
             st.write("""
                      ### 1. Principal Component Analysis (PCA)

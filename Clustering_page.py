@@ -19,7 +19,7 @@ def clusterpage():
 
     # Display section header
     st.header("Principal Component Analysis (PCA) and Clustering")
-    st.subheader("Clustered Datapoints")
+    st.subheader("Cluster Dendogram")
 
     # Specify the image path (use forward slashes)
     image1_path = "images/cluster_image.png"  # Corrected path
@@ -29,7 +29,7 @@ def clusterpage():
 
     # Display the image if it was loaded successfully
     if img_str:
-        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Datapoints", use_column_width=True)
+        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Dendogram", use_column_width=True)
 
     # Displaying the Clustering section in one st.write
     st.write("""
@@ -50,12 +50,32 @@ def clusterpage():
 
             - **Targeted Strategies**: By analyzing each cluster's characteristics, stakeholders can develop tailored 
             interventions, such as awareness campaigns or financial incentives, to address specific user needs and enhance EV adoption.
-
-            #### Conclusion:
-            HAC plays a crucial role in uncovering insights about user perceptions of EVs, facilitating informed 
-            decision-making to promote electric vehicle adoption in Tamil Nadu.
             """)
+    
+    st.subheader("Clustered Datapoints (2D)")
+
+    # Specify the image path (use forward slashes)
+    image1_path = "images/cluster_points_2D.png"  # Corrected path
+
+    # Load the image
+    img_str = load_image(image1_path)
+
+    # Display the image if it was loaded successfully
+    if img_str:
+        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Data", use_column_width=True)
             
+
+    st.subheader("Cluster Datapoits (3D)")
+
+    # Specify the image path (use forward slashes)
+    image1_path = "images/cluster_points_3D.png"  # Corrected path
+
+    # Load the image
+    img_str = load_image(image1_path)
+
+    # Display the image if it was loaded successfully
+    if img_str:
+        st.image(f"data:image/png;base64,{img_str}", caption="Clustered Data", use_column_width=True) 
             # Displaying the Cluster Analysis Results and Insights in one st.write
     st.write("""
             ### Cluster Analysis Results:
@@ -137,4 +157,8 @@ def clusterpage():
 
             - **Further Research**: Future studies could explore qualitative aspects through interviews or focus groups to 
             deepen the understanding of users' perceptions and barriers to EV adoption.
+             
+             #### Conclusion:
+            HAC plays a crucial role in uncovering insights about user perceptions of EVs, facilitating informed 
+            decision-making to promote electric vehicle adoption in Tamil Nadu.
             """)
