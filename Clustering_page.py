@@ -65,7 +65,7 @@ def clusterpage():
     st.subheader("Clustered Datapoits (3D)")
 
     # Specify the image path (use forward slashes)
-    image3_path = "images/cluster_points_3D.png"  # Corrected path
+    image3_path = "images/cluster_points_3D.png" 
 
     # Load the image
     img_str3 = load_image(image3_path)
@@ -73,7 +73,8 @@ def clusterpage():
     # Display the image if it was loaded successfully
     if img_str3:
         st.image(f"data:image/png;base64,{img_str3}", caption="Clustered Data", use_column_width=True) 
-            # Displaying the Cluster Analysis Results and Insights in one st.write
+    
+    # Displaying the Cluster Analysis Results and Insights in one st.write
     st.write("""
             ### Cluster Analysis Results:
 
